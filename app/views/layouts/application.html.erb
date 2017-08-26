@@ -10,23 +10,27 @@
 
 	<body class='<%= controller.controller_name %>'>
 		<div id="banner">
-			  <%= image_tag "logo.JPG", alt: 'Alexblack Designs' %>
-			  <span class="title"><%= @page_title%></span>
+			<%= image_tag 'logo.JPG', alt: 'Alexblack Designs' %>
+			<span class="title"><%= @page_title %></span>
 		</div>
 		<div id="columns">
+		<div id="side">
+		 <div id="cart">
+		<% if @cart %>
+			<%= render @cart %>
+	    <% end %>
+		</div>
 
-		  <div id="side" align="center">
-		 
-			<ul>
-				<li><a href="http://www....">Home</a></li>
-				<li><a href="http://www..../faq">Questions</a></li>
-				<li><a href="http://www..../news">News</a></li>
-				<li><a href="http://www..../contact">Contact</a></li>					
-			 </ul>
-		  </div>
-		  <div id="main">
-			<%= yield %>
-		  </div>
+		<ul>
+		<li><a href="http://www....">Home</a></li>
+		<li><a href="http://www..../faq">Questions</a></li>
+		<li><a href="http://www..../news">News</a></li>
+		<li><a href="http://www..../contact">Contact</a></li>
+		</ul>
+		</div>
+		<div id="main">
+		<%= yield %>
+		</div>
 		</div>
 	</body>
 </html>

@@ -10,22 +10,22 @@
  # timeout: 5000
 
 development:
-  #adapter: postgresql
-  #encoding: unicode
-  #database: alexblack
-  #pool: 50
-  #username: alexblack
-  #password: alexBlack#1234!
-  #timeout: 500000
-  host: ec2-54-75-239-190.eu-west-1.compute.amazonaws.com
-  port: 5432
   adapter: postgresql
   encoding: unicode
-  database: d2ojhtk3176rmu
+  database: alexblack
   pool: 50
-  username: cvapdpiztobwyt
-  password: bcf9eef8e7c7141dc8b766e88e54aca38f8d3438988183fcd186d8d06d2f3643
+  username: alexblack
+  password: alexBlack#1234!
   timeout: 500000
+  #host: ec2-54-75-239-190.eu-west-1.compute.amazonaws.com
+  #port: 5432
+  #adapter: postgresql
+ # encoding: unicode
+  #database: d2ojhtk3176rmu
+  #pool: 50
+  #username: cvapdpiztobwyt
+  #password: bcf9eef8e7c7141dc8b766e88e54aca38f8d3438988183fcd186d8d06d2f3643
+  #timeout: 500000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
