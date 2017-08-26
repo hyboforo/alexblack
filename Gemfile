@@ -25,6 +25,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script-source', '1.8.0'
 
+#gems for javascript
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
 # gems fr image uploads 
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
@@ -55,8 +59,11 @@ group :development do
   gem 'pg', '>=0.21.0'
 end
 
-group :development do
+group :production do
 gem 'rails_12factor'
+#gem 'unicorn' # make sure you follow installation instructions for this gem
+gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
