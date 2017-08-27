@@ -33,6 +33,8 @@ gem 'jquery-ui-rails'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 
+gem 'rails_12factor', group: :production
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -59,12 +61,12 @@ group :development do
   gem 'pg', '>=0.21.0'
 end
 
-group :production do
-gem 'rails_12factor'
+#group :production do
+#gem 'rails_12factor'
 #gem 'unicorn' # make sure you follow installation instructions for this gem
-gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-end
+#gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+#gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+#end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
