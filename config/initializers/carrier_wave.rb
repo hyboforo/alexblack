@@ -23,7 +23,7 @@
     :region                 => 'US East (Ohio)'                        # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'alexblack'               # required
-  config.fog_host       = 'http://s3.amazonaws.com'           # optional, defaults to nil
+  config.asset_host       = 'http://s3.amazonaws.com'           # optional, defaults to nil
   config.fog_public     = false                                  # optional, defaults to true
   config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
 end
