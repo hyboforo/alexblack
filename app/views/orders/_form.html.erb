@@ -1,32 +1,32 @@
-<%= form_for(@order) do |f| %>
-<% if @order.errors.any? %>
-<div id="error_explanation">
-<h2><%= pluralize(@order.errors.count, "error") %>
-prohibited this order from being saved:</h2>
-<ul>
-<% @order.errors.full_messages.each do |message| %>
-<li><%= message %></li>
-<% end %>
-</ul>
-</div>
-<% end %>
+<%= form_with(model: order, local: true) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, size: 40 %>
+    <%= form.text_field :name, id: :order_name %>
   </div>
 
   <div class="field">
     <%= form.label :phone %>
-    <%= form.number_field :phone, size: 40 %>
+    <%= form.number_field :phone, id: :order_phone %>
   </div>
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.email_field :email %>
+    <%= form.text_field :email, id: :order_email %>
   </div>
 
   <div class="actions">
-    <%= form.submit 'Place Order' %>
+    <%= form.submit %>
   </div>
 <% end %>
