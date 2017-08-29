@@ -32,6 +32,7 @@ gem 'jquery-ui-rails'
 # gems fr image uploads 
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
+gem 'fog'
 
 gem 'rails_12factor', group: :production
 
