@@ -20,7 +20,7 @@
     :provider               => 'AWS',                             # required
     :aws_access_key_id      => 'AKIAIAIMIUQFIVSP3DNA',            # required
     :aws_secret_access_key  => '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',     # required
-    #:region                 => 'US East (Ohio)'                        # optional, defaults to 'us-east-1'
+    :region                 => 'us-east-2'                        # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'alexblack'               # required
   config.asset_host       = 's3.amazonaws.com'           # optional, defaults to nil
