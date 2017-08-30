@@ -18,8 +18,8 @@
   
   config.fog_credentials = {
     :provider               => 'AWS',                             # required
-    :aws_access_key_id      => 'AKIAJPSDLYISQWIEUQYA',            # required
-    :aws_secret_access_key  => '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',     # required
+    :aws_access_key_id      => 'AKIAJARMTPQX3KDATLQA',            # required
+    :aws_secret_access_key  => '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',     # required
     :region                 => 'us-east-2'                        # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'alexblack'               # required
