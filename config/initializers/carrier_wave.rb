@@ -18,7 +18,7 @@
   
   config.fog_credentials = {
     :provider               => 'AWS',                             # required
-    :aws_access_key_id      => 'AKIAIIKYNORBPUVV6GWA',            # required
+    :aws_access_key_id      => 'AKIAIFS6HFQ7PH2SCGPA',            # required
     :aws_secret_access_key  => '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',     # required
     :region                 => 'us-east-2'                        # optional, defaults to 'us-east-1'
   }
