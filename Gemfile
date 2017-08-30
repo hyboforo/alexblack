@@ -33,6 +33,7 @@ gem 'jquery-ui-rails'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 gem 'fog'
+gem 'redis'
 
 gem 'rails_12factor', group: :production
 
